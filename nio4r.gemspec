@@ -30,11 +30,4 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.required_ruby_version = ">= 2.4"
-
-  if defined? JRUBY_VERSION
-    spec.files << "lib/nio4r_ext.jar"
-    spec.platform = "java"
-  else
-    spec.extensions = ["ext/nio4r/extconf.rb"]
-  end
 end
